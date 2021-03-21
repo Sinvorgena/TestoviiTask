@@ -1,0 +1,1875 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(11eabca2251325cfc5589c9c6fb57b46.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Galien';
+    src: url(1cbf6a1cfd83903658c17a63da96a2d2.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'GilroyR';
+    src: url(ae5e7255973ffe09b53f07a2805232a8.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'GilroySB';
+    src: url(05bdf30b8aaa10683c19e73dd0c428da.ttf) format('truetype');
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+$WidthForPc: 1920px;
+$WidthForLaptop: 1020px;
+$WidthForTablet: 768px;
+$WidthForPhone: 320px;
+$fz: 16px;
+
+
+html{
+  font-size: $fz;
+}
+
+
+.text{
+  font-size: 1rem;
+  line-height: 26px;
+  color: #1F3F68;
+  opacity: 0.6;
+}
+.btn{
+  color: white;
+  background: #5A98D0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  padding: 15px 48px;
+  border: none;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+
+  &:active {
+    position: relative;
+    top: 3px;
+  }
+}
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 0.40fr 0.40fr;
+  grid-template-areas: "Header"
+                       "WWD"
+                       "FooterBox";
+  margin: 0 auto;
+  font-family: "GilroyR", sans-serif;
+  letter-spacing: 0.05em;
+  &.BurgerActive{
+    overflow: hidden;
+  }
+}
+.burgerMenu{
+  width: 0;
+  height: 100vh;
+  background: antiquewhite;
+  position: fixed;
+  &.active{
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+  }
+  &__content{
+    display: none;
+  }
+  &.active &__content{
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 10vh;
+    & ul{
+      list-style: none;
+      width: 50%;
+      margin: 0 auto;
+      & li{
+        font-size: 2.25rem;
+        margin-bottom: 3vh;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+.Header {
+  grid-area: Header;
+  padding: 50px 0 250px 0;
+  background: linear-gradient(0deg, rgba(152, 195, 232, 0.3) 8.84%, rgba(152, 195, 232, 0) 51.12%);
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    margin: 5% 0 auto 7%;
+  }
+
+  & .Illustration {
+
+    width: 700px;
+    height: 610px;
+    position: absolute;
+    top: 12vh;
+    left: 60vw;
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &__illustration-bg {
+      position: absolute;
+      left: 2vw;
+      top: 6vh;
+    }
+    &__man {
+      position: absolute;
+      left: 64px;
+      background-size: cover;
+      top: 260px;
+    }
+
+    &__platform {
+      position: absolute;
+      background-size: cover;
+      left: 160px;
+      top: 200px;
+    }
+
+    &__women {
+      position: absolute;
+      width: 270px;
+      height: 210px;
+      left: 100px;
+      background-size: cover;
+      top: 210px;
+    }
+
+    &__smartHome {
+      position: absolute;
+      left: 340px;
+      top: -70px;
+      background-size: cover;
+    }
+  }
+
+  &__logoWrapper {
+    margin: 0 4% 0 4%;
+    display: grid;
+    grid-template-rows: 2rem;
+    grid-template-columns: 48px 1fr 24px;
+    grid-template-areas: "logo . burger";
+  }
+
+  &__logo {
+    width: 48px;
+    grid-area: logo;
+    height: 32px;
+
+  }
+
+  &__burgerMenu {
+    z-index: 2;
+    width: 24px;
+    grid-area: burger;
+    height: 16px;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    &.active{
+      & span{
+        &::before{
+          transition: all 0.5s;
+          transform: rotate(135deg);
+        }
+        &::after{
+          transition: all 0.5s;
+          top: -12px;
+          position: relative;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+    & span{
+      transition: all 0.5s;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background: black;
+      border-radius: 1px;
+      margin-bottom: 5px;
+      &::after{
+        content:"";
+        transition: all 0.5s;
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background: black;
+        margin-bottom: 5px;
+        border-radius: 1px;
+      }
+      &::before{
+        transition: all 0.5s;
+        content:"";
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background: black;
+        border-radius: 1px;
+      }
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Galien", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.04em;
+
+  }
+
+  & .text{
+    max-width: 80%;
+    margin: 10% 0 10% 0;
+  }
+
+  &__btn {
+    width: 50%;
+  }
+}
+.WhatWeDo {
+  height: 1162px;
+  padding: 200px 0;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 262.5px 262.5px 262.5px 262.5px;
+    grid-template-areas:  "title  item1"
+                          "item2  item1"
+                          "item2  item3"
+                          ".      item3";
+    grid-gap: 100px;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    grid-area: title;
+    font-family: "GilroySB", sans-serif;
+    max-width: 360px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #316099;
+
+  }
+
+  & .WhatWeDo-item {
+    width: 50%;
+    padding: 0 48px 0 48px;
+    grid-area: item;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9fr 27fr 3fr 8fr 6fr 28fr 5fr 5fr 9fr;
+    grid-template-areas: "."
+                         "photo"
+                         "."
+                         "title"
+                         "."
+                         "text"
+                         "."
+                         "btn"
+                         ".";
+    height: 100%;
+    margin: 0 0 0 auto;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    position: relative;
+
+    &__img {
+    grid-area: photo;
+      & img {
+
+        top: -10px;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+
+    &__title {
+      grid-area: title;
+      font-family: "GilroySB", sans-serif;
+      font-size: 1.25rem;
+      line-height: 30px;
+      color: #1F3F68;
+    }
+
+    &__text {
+      grid-area: text;
+      font-size: 1.25rem;
+    }
+
+    &__btnLearnMore {
+      grid-area: btn;
+      background: white;
+      width: 50%;
+      color: #5A98D0;
+      text-align: left;
+      position: relative;
+      box-shadow: none;
+      padding: 0;
+      font-family: "GilroySB", sans-serif;
+      margin: auto 0 auto 0;
+      &::after {
+        position: absolute;
+        top: 3px;
+        left: 12vw;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url("/src/assets/Arrow.svg");
+      }
+    }
+  }
+
+  & .item1 {
+    grid-area: item1;
+    & .WhatWeDo-item__img {
+      & img {
+        position: absolute;
+        left: 5vw;
+      }
+    }
+  }
+
+  & .item2 {
+    grid-area: item2;
+    margin: 0 auto 0 0;
+    & .WhatWeDo-item__img {
+      & img {
+        margin: 0 auto 0 20%;
+      }
+    }
+  }
+
+  & .item3 {
+    grid-area: item3;
+
+    & .WhatWeDo-item__img {
+      & img {
+        margin: 0 auto 0 20%;
+      }
+    }
+  }
+}
+
+.OurClient {
+  & .container {
+    display: grid;
+    grid-template-columns: 223px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title text"
+                          "logoBox logoBox";
+  }
+
+  & .ColorContainer {
+    padding: 100px 0;
+  }
+
+  &__title {
+    grid-area: title;
+    line-height: 46px;
+    font-size: 2.25rem;
+    display: inline-block;
+  }
+
+  &__text {
+    margin: 35px 10vw;
+    grid-area: text;
+    display: inline-block;
+  }
+
+  &__logoClientBox {
+    grid-area: logoBox;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "row1"
+                         "row2";
+
+    & .row1 {
+      grid-area: row1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      & .item {
+
+      }
+
+      & .item:last-child {
+        border-right: none;
+      }
+    }
+
+    & .row2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-area: row2;
+
+      & .item {
+        border-bottom: none;
+      }
+
+      & .item:last-child {
+        border-right: none;
+      }
+    }
+
+    & .item {
+      border: 1px solid white;
+      border-left: none;
+      border-top: none;
+      padding: 45px;
+    }
+    & .item.moreClient{
+      background: #1F3F68;
+      opacity: 0.2;
+    }
+  }
+
+}
+
+.ContactUs {
+  height: 300px;
+  padding: 100px 0 100px 80px;
+  background-color: #316099;
+  border-radius: 0px 200px 0px 0;
+  margin-right: 10vw;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+  }
+
+  & .container {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "CUcontent CUbutton";
+
+  }
+
+  &__content {
+    grid-area: CUcontent;
+  }
+
+  &__btn {
+    grid-area: CUbutton;
+    margin: auto;
+  }
+
+  &__title {
+    margin-right: 15vw;
+    font-size: 2.25rem;
+    line-height: 46px;
+  }
+  &__text{
+    color: white;
+  }
+}
+
+.FooterBox {
+  color: white;
+  grid-area: FooterBox;
+  border-radius: 200px 0px 0px 0px;
+  background-color: #5A98D0;
+
+  &__ColorContainer {
+
+
+  }
+}
+
+.footer {
+  margin-right: 10vw;
+  background-color: #316099;
+  padding: 100px 0 80px 80px;
+
+  & .container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.25fr 0.25fr;
+    grid-gap: 0 110px;
+    grid-template-rows: 0.9fr 0.1fr;
+    grid-template-areas: "Info AboutUs FollowUs"
+                       "copyright  .   .   ";
+  }
+
+  &__Info {
+    grid-area: Info;
+
+    & ul {
+      padding: 0;
+      list-style: none;
+
+      & li {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 0.09fr 0.91fr;
+      }
+
+      & .listName {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__aboutUs {
+    grid-area: AboutUs;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+
+      & li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__followUs {
+    grid-area: FollowUs;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+
+      & li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .listTitle {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-family: "GilroySB", sans-serif;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+  }
+
+  &__logo {
+    grid-template-rows: 1fr;
+    grid-template-columns: 48px 1fr;
+    font-size: 1.75rem;
+    display: grid;
+    grid-gap: 20px;
+    font-family: "GilroySB", sans-serif;
+    letter-spacing: 0.02em;
+
+    line-height: 46px;
+
+    & img {
+      display: block;
+      margin: auto 0 auto 0;
+    }
+
+  }
+
+  &__companyName {
+    margin: 0 0 auto 0;
+  }
+
+  &__copyright {
+    margin-top: 50px;
+    opacity: 0.4;
+    color: white;
+  }
+}
+@media (max-width: 1768px) {
+  .Header{
+    & .Illustration{
+      left: 50vw;
+      top: 12vh;
+    }
+  }
+
+}
+@media (max-width: 1421px) {
+  .Header{
+    & .Illustration{
+      left: 40vw;
+      top: 12vh;
+    }
+  }
+
+}
+@media (max-width: 1165px) {
+  html{
+    font-size: 14px;
+  }
+  .Header{
+    & .Illustration{
+      left: 37vw;
+      top: 12vh;
+      width: 500px;
+      &__illustration-bg{
+        top: 100px;
+      }
+      &__man{
+        top: 200px;
+        width: 100px;
+      }
+      &__platform{
+        width: 200px;
+        top: 160px;
+        left: 134px;
+      }
+      &__women{
+        width: 100px;
+        top: 100px;
+      }
+      &__smartHome{
+        top: -40px;
+        width: 200px;
+        left: 250px;
+      }
+    }
+  }
+  .WhatWeDo {
+    & .container {
+    }
+
+    &__title {
+    }
+
+    & .WhatWeDo-item {
+      &__img {
+        & img {
+        }
+      }
+
+      & .item1 {
+        & .WhatWeDo-item__img {
+          & img {
+
+          }
+          }
+        }
+      }
+
+      & .item2 {
+        & .WhatWeDo-item__img {
+          & img {
+            margin: 0;
+          }
+        }
+      }
+
+      & .item3 {
+        & .WhatWeDo-item__img {
+          & img {
+            margin: 0;
+          }
+        }
+      }
+    }
+    }
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  .Header {
+    & .container {
+      margin-left: 1%;
+    }
+
+    & .Illustration {
+      left: 32vw;
+      top: 12vh;
+    }
+
+    &__btn {
+      padding: 15px 0;
+    }
+  }
+
+  .WhatWeDo .item1 .WhatWeDo-item__img img {
+    left: 1vw;
+    width: 200px;
+  }
+  .WhatWeDo .WhatWeDo-item {
+    padding: 0 20px;
+  }
+  .WhatWeDo .item2 .WhatWeDo-item__img img{
+    position: absolute;
+    top: 2vh;
+    left: 0;
+  }
+  .WhatWeDo .item3 .WhatWeDo-item__img img{
+    position: absolute;
+    top: 2vh;
+    left: 0;
+  }
+}
+
+
+@media (max-width: 918px) {
+  .Header{
+    width: 100vw;
+  }
+  .WhatWeDo .item1 .WhatWeDo-item__img img , .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img{
+    width: 180px;
+    top: 2vh;
+  }
+
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 10px;
+  }
+  .Header{
+    & .Illustration{
+      width: 400px;
+      &__illustration-bg{
+        top: 140px;
+      }
+      &__man{
+        left: 40px;
+        top: 155px;
+        width: 80px;
+      }
+      &__platform{
+        width: 150px;
+        top: 130px;
+        left: 96px;
+      }
+      &__women{
+        width: 80px;
+        top: 60px;
+        left: 80px;
+      }
+      &__smartHome{
+        top: -30px;
+        width: 160px;
+        left: 200px;
+      }
+    }
+  }
+  .WhatWeDo .item1 .WhatWeDo-item__img img , .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img{
+    width: 160px;
+    top: 3vh;
+  }
+  .footer .container{
+    grid-gap: 0 5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .WhatWeDo .item1 .WhatWeDo-item__img img , .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img{
+    width: 140px;
+    top: 3vh;
+  }
+  .OurClient__logoClientBox .item{
+    padding: 30px 10px;
+  }
+  .OurClient__logoClientBox .row1{
+    width: 100%;
+    height: 50%;
+    margin: auto auto 0 auto;
+  }
+  .OurClient__logoClientBox .row2{
+    height: 50%;
+    width: 100%;
+    margin: 0 auto auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  html{
+    font-size: 9px;
+  }
+  .Header{
+    & .Illustration{
+      width: 300px;
+      top: 2vh;
+      left: 35vw;
+      &__illustration-bg{
+        top: 180px;
+      }
+      &__man{
+        left: 30px;
+        top: 115px;
+        width: 60px;
+      }
+      &__platform{
+        width: 120px;
+        top: 96px;
+        left: 72px;
+      }
+      &__women{
+        width: 60px;
+        top: 28px;
+        left: 74px;
+      }
+      &__smartHome{
+        top: -30px;
+        width: 130px;
+        left: 140px;
+      }
+    }
+  }
+  .WhatWeDo .item1 .WhatWeDo-item__img img , .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img{
+    width: 140px;
+    top: 3vh;
+  }
+  .WhatWeDo .container{
+    grid-gap: 50px 20px;
+  }
+  .WhatWeDo .item1{
+    margin: 0 auto 0 0;
+  }
+  .WhatWeDo .item2{
+    margin: 0 0 0 auto;
+  }
+  .WhatWeDo .item3{
+    margin: 0 auto 0 0;
+  }
+  .footer .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.4fr 0.1fr;
+    grid-template-areas: "Info Info"
+                         "AboutUs FollowUs"
+                         "copyright .";
+  }
+  .footer__Info,.footer__aboutUs, .footer__followUs{
+    padding: 0 20px;
+  }
+  .OurClient .container{
+    grid-template-columns: 1fr;
+    grid-template-areas: "title"
+                         "text"
+                         "logoBox";
+  }
+  .OurClient__title{
+    margin: 0 auto;
+  }
+  .ContactUs .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "CUcontent"
+                         "CUbutton";
+  }
+  .ContactUs__btn{
+    margin: auto auto auto 0;
+  }
+}
+@media (max-width: 436px) {
+  html{
+    font-size: 8px;
+  }
+  .Header{
+    & .Illustration{
+      width: 200px;
+      top: 30vh;
+      left: 40vw;
+      height: 200px;
+      &__illustration-bg{
+        top: 20px;
+      }
+      &__man{
+        left: 26px;
+        top: 76px;
+        width: 40px;
+      }
+      &__platform{
+        width: 60px;
+        top: 66px;
+        left: 54px;
+      }
+      &__women{
+        width: 40px;
+        top: -30px;
+        left: 40px;
+      }
+      &__smartHome{
+        top: -10px;
+        width: 70px;
+        left: 100px;
+      }
+    }
+  }
+  .WhatWeDo .item2{
+    margin: 0 auto 0 0;
+  }
+
+}
+
+
+
+
+
+
+html {
+  font-size: 16px; }
+
+.text {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #1F3F68;
+  opacity: 0.6; }
+
+.btn {
+  color: white;
+  background: #5A98D0;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border-radius: 10px;
+  padding: 15px 48px;
+  border: none; }
+  .btn:focus {
+    outline: none;
+    border: none; }
+  .btn:active {
+    position: relative;
+    top: 3px; }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto; }
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.20fr 0.40fr 0.40fr;
+  grid-template-areas: "Header" "WWD" "FooterBox";
+  margin: 0 auto;
+  font-family: "GilroyR", sans-serif;
+  letter-spacing: 0.05em; }
+  body.BurgerActive {
+    overflow: hidden; }
+
+.burgerMenu {
+  width: 0;
+  height: 100vh;
+  background: antiquewhite;
+  position: fixed; }
+  .burgerMenu.active {
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed; }
+  .burgerMenu__content {
+    display: none; }
+  .burgerMenu.active .burgerMenu__content {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 10vh; }
+    .burgerMenu.active .burgerMenu__content ul {
+      list-style: none;
+      width: 50%;
+      margin: 0 auto; }
+      .burgerMenu.active .burgerMenu__content ul li {
+        font-size: 2.25rem;
+        margin-bottom: 3vh;
+        cursor: pointer; }
+
+.Header {
+  grid-area: Header;
+  padding: 50px 0 250px 0;
+  background: linear-gradient(0deg, rgba(152, 195, 232, 0.3) 8.84%, rgba(152, 195, 232, 0) 51.12%); }
+  .Header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40%;
+    margin: 5% 0 auto 7%; }
+  .Header .Illustration {
+    width: 700px;
+    height: 610px;
+    position: absolute;
+    top: 12vh;
+    left: 60vw; }
+    .Header .Illustration img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+    .Header .Illustration__illustration-bg {
+      position: absolute;
+      left: 2vw;
+      top: 6vh; }
+    .Header .Illustration__man {
+      position: absolute;
+      left: 64px;
+      background-size: cover;
+      top: 260px; }
+    .Header .Illustration__platform {
+      position: absolute;
+      background-size: cover;
+      left: 160px;
+      top: 200px; }
+    .Header .Illustration__women {
+      position: absolute;
+      width: 270px;
+      height: 210px;
+      left: 100px;
+      background-size: cover;
+      top: 210px; }
+    .Header .Illustration__smartHome {
+      position: absolute;
+      left: 340px;
+      top: -70px;
+      background-size: cover; }
+  .Header__logoWrapper {
+    margin: 0 4% 0 4%;
+    display: grid;
+    grid-template-rows: 2rem;
+    grid-template-columns: 48px 1fr 24px;
+    grid-template-areas: "logo . burger"; }
+  .Header__logo {
+    width: 48px;
+    grid-area: logo;
+    height: 32px; }
+  .Header__burgerMenu {
+    z-index: 2;
+    width: 24px;
+    grid-area: burger;
+    height: 16px;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    box-shadow: none; }
+    .Header__burgerMenu.active span::before {
+      transition: all 0.5s;
+      transform: rotate(135deg); }
+    .Header__burgerMenu.active span::after {
+      transition: all 0.5s;
+      top: -12px;
+      position: relative;
+      transform: rotate(-135deg); }
+    .Header__burgerMenu span {
+      transition: all 0.5s;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+      background: black;
+      border-radius: 1px;
+      margin-bottom: 5px; }
+      .Header__burgerMenu span::after {
+        content: "";
+        transition: all 0.5s;
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background: black;
+        margin-bottom: 5px;
+        border-radius: 1px; }
+      .Header__burgerMenu span::before {
+        transition: all 0.5s;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background: black;
+        border-radius: 1px; }
+  .Header__title {
+    margin: 0;
+    font-family: "Galien", sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.04em; }
+  .Header .text {
+    max-width: 80%;
+    margin: 10% 0 10% 0; }
+  .Header__btn {
+    width: 50%; }
+
+.WhatWeDo {
+  height: 1162px;
+  padding: 200px 0; }
+  .WhatWeDo .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 262.5px 262.5px 262.5px 262.5px;
+    grid-template-areas: "title  item1" "item2  item1" "item2  item3" ".      item3";
+    grid-gap: 100px; }
+  .WhatWeDo__title {
+    font-size: 2.25rem;
+    grid-area: title;
+    font-family: "GilroySB", sans-serif;
+    max-width: 360px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #316099; }
+  .WhatWeDo .WhatWeDo-item {
+    width: 50%;
+    padding: 0 48px 0 48px;
+    grid-area: item;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9fr 27fr 3fr 8fr 6fr 28fr 5fr 5fr 9fr;
+    grid-template-areas: "." "photo" "." "title" "." "text" "." "btn" ".";
+    height: 100%;
+    margin: 0 0 0 auto;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    position: relative; }
+    .WhatWeDo .WhatWeDo-item__img {
+      grid-area: photo; }
+      .WhatWeDo .WhatWeDo-item__img img {
+        top: -10px;
+        margin: 0 auto;
+        display: block; }
+    .WhatWeDo .WhatWeDo-item__title {
+      grid-area: title;
+      font-family: "GilroySB", sans-serif;
+      font-size: 1.25rem;
+      line-height: 30px;
+      color: #1F3F68; }
+    .WhatWeDo .WhatWeDo-item__text {
+      grid-area: text;
+      font-size: 1.25rem; }
+    .WhatWeDo .WhatWeDo-item__btnLearnMore {
+      grid-area: btn;
+      background: white;
+      width: 50%;
+      color: #5A98D0;
+      text-align: left;
+      position: relative;
+      box-shadow: none;
+      padding: 0;
+      font-family: "GilroySB", sans-serif;
+      margin: auto 0 auto 0; }
+      .WhatWeDo .WhatWeDo-item__btnLearnMore::after {
+        position: absolute;
+        top: 3px;
+        left: 12vw;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: url("/src/assets/Arrow.svg"); }
+  .WhatWeDo .item1 {
+    grid-area: item1; }
+    .WhatWeDo .item1 .WhatWeDo-item__img img {
+      position: absolute;
+      left: 5vw; }
+  .WhatWeDo .item2 {
+    grid-area: item2;
+    margin: 0 auto 0 0; }
+    .WhatWeDo .item2 .WhatWeDo-item__img img {
+      margin: 0 auto 0 20%; }
+  .WhatWeDo .item3 {
+    grid-area: item3; }
+    .WhatWeDo .item3 .WhatWeDo-item__img img {
+      margin: 0 auto 0 20%; }
+
+.OurClient .container {
+  display: grid;
+  grid-template-columns: 223px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title text" "logoBox logoBox"; }
+
+.OurClient .ColorContainer {
+  padding: 100px 0; }
+
+.OurClient__title {
+  grid-area: title;
+  line-height: 46px;
+  font-size: 2.25rem;
+  display: inline-block; }
+
+.OurClient__text {
+  margin: 35px 10vw;
+  grid-area: text;
+  display: inline-block; }
+
+.OurClient__logoClientBox {
+  grid-area: logoBox;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "row1" "row2"; }
+  .OurClient__logoClientBox .row1 {
+    grid-area: row1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .OurClient__logoClientBox .row1 .item:last-child {
+      border-right: none; }
+  .OurClient__logoClientBox .row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: row2; }
+    .OurClient__logoClientBox .row2 .item {
+      border-bottom: none; }
+    .OurClient__logoClientBox .row2 .item:last-child {
+      border-right: none; }
+  .OurClient__logoClientBox .item {
+    border: 1px solid white;
+    border-left: none;
+    border-top: none;
+    padding: 45px; }
+  .OurClient__logoClientBox .item.moreClient {
+    background: #1F3F68;
+    opacity: 0.2; }
+
+.ContactUs {
+  height: 300px;
+  padding: 100px 0 100px 80px;
+  background-color: #316099;
+  border-radius: 0px 200px 0px 0;
+  margin-right: 10vw;
+  position: relative; }
+  .ContactUs::after {
+    content: "";
+    height: 1px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white; }
+  .ContactUs .container {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "CUcontent CUbutton"; }
+  .ContactUs__content {
+    grid-area: CUcontent; }
+  .ContactUs__btn {
+    grid-area: CUbutton;
+    margin: auto; }
+  .ContactUs__title {
+    margin-right: 15vw;
+    font-size: 2.25rem;
+    line-height: 46px; }
+  .ContactUs__text {
+    color: white; }
+
+.FooterBox {
+  color: white;
+  grid-area: FooterBox;
+  border-radius: 200px 0px 0px 0px;
+  background-color: #5A98D0; }
+
+.footer {
+  margin-right: 10vw;
+  background-color: #316099;
+  padding: 100px 0 80px 80px; }
+  .footer .container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.25fr 0.25fr;
+    grid-gap: 0 110px;
+    grid-template-rows: 0.9fr 0.1fr;
+    grid-template-areas: "Info AboutUs FollowUs" "copyright  .   .   "; }
+  .footer__Info {
+    grid-area: Info; }
+    .footer__Info ul {
+      padding: 0;
+      list-style: none; }
+      .footer__Info ul li {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 0.09fr 0.91fr; }
+      .footer__Info ul .listName {
+        margin-right: 20px; }
+  .footer__aboutUs {
+    grid-area: AboutUs; }
+    .footer__aboutUs ul {
+      list-style: none;
+      padding: 0; }
+      .footer__aboutUs ul li {
+        margin-bottom: 20px; }
+  .footer__followUs {
+    grid-area: FollowUs; }
+    .footer__followUs ul {
+      list-style: none;
+      padding: 0; }
+      .footer__followUs ul li {
+        margin-bottom: 20px; }
+  .footer .listTitle {
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-family: "GilroySB", sans-serif; }
+  .footer__copyright {
+    grid-area: copyright; }
+  .footer__logo {
+    grid-template-rows: 1fr;
+    grid-template-columns: 48px 1fr;
+    font-size: 1.75rem;
+    display: grid;
+    grid-gap: 20px;
+    font-family: "GilroySB", sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 46px; }
+    .footer__logo img {
+      display: block;
+      margin: auto 0 auto 0; }
+  .footer__companyName {
+    margin: 0 0 auto 0; }
+  .footer__copyright {
+    margin-top: 50px;
+    opacity: 0.4;
+    color: white; }
+
+@media (max-width: 1768px) {
+  .Header .Illustration {
+    left: 50vw;
+    top: 12vh; } }
+
+@media (max-width: 1421px) {
+  .Header .Illustration {
+    left: 40vw;
+    top: 12vh; } }
+
+@media (max-width: 1165px) {
+  html {
+    font-size: 14px; }
+  .Header .Illustration {
+    left: 37vw;
+    top: 12vh;
+    width: 500px; }
+    .Header .Illustration__illustration-bg {
+      top: 100px; }
+    .Header .Illustration__man {
+      top: 200px;
+      width: 100px; }
+    .Header .Illustration__platform {
+      width: 200px;
+      top: 160px;
+      left: 134px; }
+    .Header .Illustration__women {
+      width: 100px;
+      top: 100px; }
+    .Header .Illustration__smartHome {
+      top: -40px;
+      width: 200px;
+      left: 250px; }
+  .WhatWeDo .item2 .WhatWeDo-item__img img {
+    margin: 0; }
+  .WhatWeDo .item3 .WhatWeDo-item__img img {
+    margin: 0; } }
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 12px; }
+  .Header .container {
+    margin-left: 1%; }
+  .Header .Illustration {
+    left: 32vw;
+    top: 12vh; }
+  .Header__btn {
+    padding: 15px 0; }
+  .WhatWeDo .item1 .WhatWeDo-item__img img {
+    left: 1vw;
+    width: 200px; }
+  .WhatWeDo .WhatWeDo-item {
+    padding: 0 20px; }
+  .WhatWeDo .item2 .WhatWeDo-item__img img {
+    position: absolute;
+    top: 2vh;
+    left: 0; }
+  .WhatWeDo .item3 .WhatWeDo-item__img img {
+    position: absolute;
+    top: 2vh;
+    left: 0; } }
+
+@media (max-width: 918px) {
+  .Header {
+    width: 100vw; }
+  .WhatWeDo .item1 .WhatWeDo-item__img img, .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img {
+    width: 180px;
+    top: 2vh; } }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px; }
+  .Header .Illustration {
+    width: 400px; }
+    .Header .Illustration__illustration-bg {
+      top: 140px; }
+    .Header .Illustration__man {
+      left: 40px;
+      top: 155px;
+      width: 80px; }
+    .Header .Illustration__platform {
+      width: 150px;
+      top: 130px;
+      left: 96px; }
+    .Header .Illustration__women {
+      width: 80px;
+      top: 60px;
+      left: 80px; }
+    .Header .Illustration__smartHome {
+      top: -30px;
+      width: 160px;
+      left: 200px; }
+  .WhatWeDo .item1 .WhatWeDo-item__img img, .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img {
+    width: 160px;
+    top: 3vh; }
+  .footer .container {
+    grid-gap: 0 5vw; } }
+
+@media (max-width: 700px) {
+  .WhatWeDo .item1 .WhatWeDo-item__img img, .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img {
+    width: 140px;
+    top: 3vh; }
+  .OurClient__logoClientBox .item {
+    padding: 30px 10px; }
+  .OurClient__logoClientBox .row1 {
+    width: 100%;
+    height: 50%;
+    margin: auto auto 0 auto; }
+  .OurClient__logoClientBox .row2 {
+    height: 50%;
+    width: 100%;
+    margin: 0 auto auto auto; } }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 9px; }
+  .Header .Illustration {
+    width: 300px;
+    top: 2vh;
+    left: 35vw; }
+    .Header .Illustration__illustration-bg {
+      top: 180px; }
+    .Header .Illustration__man {
+      left: 30px;
+      top: 115px;
+      width: 60px; }
+    .Header .Illustration__platform {
+      width: 120px;
+      top: 96px;
+      left: 72px; }
+    .Header .Illustration__women {
+      width: 60px;
+      top: 28px;
+      left: 74px; }
+    .Header .Illustration__smartHome {
+      top: -30px;
+      width: 130px;
+      left: 140px; }
+  .WhatWeDo .item1 .WhatWeDo-item__img img, .WhatWeDo .item2 .WhatWeDo-item__img img, .WhatWeDo .item3 .WhatWeDo-item__img img {
+    width: 140px;
+    top: 3vh; }
+  .WhatWeDo .container {
+    grid-gap: 50px 20px; }
+  .WhatWeDo .item1 {
+    margin: 0 auto 0 0; }
+  .WhatWeDo .item2 {
+    margin: 0 0 0 auto; }
+  .WhatWeDo .item3 {
+    margin: 0 auto 0 0; }
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.4fr 0.1fr;
+    grid-template-areas: "Info Info" "AboutUs FollowUs" "copyright ."; }
+  .footer__Info, .footer__aboutUs, .footer__followUs {
+    padding: 0 20px; }
+  .OurClient .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "text" "logoBox"; }
+  .OurClient__title {
+    margin: 0 auto; }
+  .ContactUs .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "CUcontent" "CUbutton"; }
+  .ContactUs__btn {
+    margin: auto auto auto 0; } }
+
+@media (max-width: 436px) {
+  html {
+    font-size: 8px; }
+  .Header .Illustration {
+    width: 200px;
+    top: 30vh;
+    left: 40vw;
+    height: 200px; }
+    .Header .Illustration__illustration-bg {
+      top: 20px; }
+    .Header .Illustration__man {
+      left: 26px;
+      top: 76px;
+      width: 40px; }
+    .Header .Illustration__platform {
+      width: 60px;
+      top: 66px;
+      left: 54px; }
+    .Header .Illustration__women {
+      width: 40px;
+      top: -30px;
+      left: 40px; }
+    .Header .Illustration__smartHome {
+      top: -10px;
+      width: 70px;
+      left: 100px; }
+  .WhatWeDo .item2 {
+    margin: 0 auto 0 0; } }
+
+
+/*# sourceMappingURL=main.css.map*/
