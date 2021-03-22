@@ -24,15 +24,15 @@ SubmitLetsTalkBtn.addEventListener("mouseenter",()=>{
 })
 SubmitLetsTalkBtn.disabled = true
 
-SubmitLetsTalkBtn.addEventListener("click", ()=>{
-
-})
-Form.addEventListener("submit", ()=>{
+SubmitLetsTalkBtn.addEventListener("click", (e)=>{
     console.log("FDFS");
     sucsessFormSendMessage.classList.add("active")
     ModuleBtn.classList.remove("active")
     ModuleBox.classList.remove("active")
     body.classList.remove("ModuleActive")
+    setTimeout(()=> {
+        Form.submit()}
+        , 3000)
 })
 
 NameInput.addEventListener("input", ()=>{
